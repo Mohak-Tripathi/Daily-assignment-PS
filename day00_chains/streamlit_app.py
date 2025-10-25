@@ -56,16 +56,117 @@ def tavilyResult(query: str) -> str:
     return content.strip()
 
 # Social media templates
+# linkedIn_template = PromptTemplate.from_template("""
+# From the {search_result}, create a LinkedIn style post.
+# """)
+
+# twitter_template = PromptTemplate.from_template("""
+# From the {search_result}, create a twitter style post.
+# """)
+
+# instagram_template = PromptTemplate.from_template("""
+# From the {search_result}, create a instagram style post.
+# """)
+
+
+# Enhanced LinkedIn Template
 linkedIn_template = PromptTemplate.from_template("""
-From the {search_result}, create a LinkedIn style post.
+You are a professional LinkedIn content strategist with expertise in B2B engagement.
+
+Context: {search_result}
+
+Create a compelling LinkedIn post following these guidelines:
+
+STRUCTURE:
+- Start with an attention-grabbing hook (question, statistic, or bold statement)
+- Use 2-3 short paragraphs (2-3 sentences each)
+- Include key insights and takeaways
+- End with a call-to-action or thought-provoking question
+
+STYLE:
+- Professional yet conversational tone
+- Use line breaks for readability
+- Include 1-2 relevant emojis (sparingly)
+- Add 3-5 relevant hashtags at the end
+
+LENGTH: 150-250 words (optimal for LinkedIn engagement)
+
+FOCUS: Provide value, insights, or actionable advice to the professional audience.
+
+LinkedIn Post:
 """)
 
+# Enhanced Twitter Template
 twitter_template = PromptTemplate.from_template("""
-From the {search_result}, create a twitter style post.
+You are a viral Twitter content creator specializing in concise, engaging tweets.
+
+Context: {search_result}
+
+Create a Twitter thread (3-4 tweets) following these guidelines:
+
+TWEET 1 (Hook):
+- Start with a compelling statement or question
+- Use numbers or bold claims to grab attention
+- Max 280 characters
+
+TWEET 2-3 (Value):
+- Break down key points or insights
+- Use bullet points or numbered lists
+- Each tweet max 280 characters
+
+TWEET 4 (CTA):
+- End with engagement question or call-to-action
+- Encourage retweets or replies
+
+STYLE:
+- Casual, direct, and punchy
+- Use 1-2 emojis per tweet
+- Include 2-3 trending hashtags
+- Use thread numbering (1/, 2/, 3/)
+
+CONSTRAINTS:
+- Each tweet MUST be under 280 characters
+- No jargon or complex terms
+- Mobile-friendly formatting
+
+Twitter Thread:
 """)
 
+# Enhanced Instagram Template
 instagram_template = PromptTemplate.from_template("""
-From the {search_result}, create a instagram style post.
+You are an Instagram content creator focused on visual storytelling and engagement.
+
+Context: {search_result}
+
+Create an Instagram post following these guidelines:
+
+CAPTION STRUCTURE:
+1. HOOK (First line): Eye-catching opener that shows in preview
+2. STORY (2-3 paragraphs): Engaging narrative or key points
+3. VALUE: Main insights or takeaways
+4. CTA: Clear call-to-action (comment, share, save)
+5. HASHTAGS: 15-20 relevant hashtags (separate section)
+
+STYLE:
+- Conversational and authentic tone
+- Use emojis generously (3-5 per paragraph)
+- Include line breaks for readability
+- Use bullet points (•) for lists
+- Ask questions to boost engagement
+
+FORMAT:
+- First line must hook readers (appears in feed preview)
+- Use spacing between sections
+- Hashtags at the very end
+
+LENGTH: 150-300 words (optimal for Instagram)
+
+ENGAGEMENT TACTICS:
+- Include a question for comments
+- Use "Save this post" or "Share with a friend" CTAs
+- Create FOMO or curiosity
+
+Instagram Caption:
 """)
 
 # Create chains
