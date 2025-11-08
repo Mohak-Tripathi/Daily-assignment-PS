@@ -383,3 +383,11 @@ streamlit run streamlit_app.py --server.port 8502
 
 **Remember:** The goal is learning, not perfection. Make mistakes, experiment, and grow! 🚀
 
+
+
+<!-- 
+cd /c/AgenticAIDevelopment/day17_crewai_intro
+source venv/Scripts/activate
+pip install -r requirements.txt
+streamlit run streamlit_app.py -->
+

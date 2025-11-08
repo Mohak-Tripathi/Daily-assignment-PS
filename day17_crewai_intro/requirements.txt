@@ -1,0 +1,7 @@
+streamlit
+crewai
+crewai[tools]
+tavily-python
+crewai[google-genai]
+google-generativeai
+

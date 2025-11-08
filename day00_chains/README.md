@@ -218,3 +218,10 @@ pip install -r requirements.txt
 # 5. Run your app
 streamlit run streamlit_app.py
 
+
+# Upgrade pip first (recommended)
+pip install --upgrade pip
+
+# Install the packages for day007
+pip install langchain-community langchain-google-genai pypdf wikipedia beautifulsoup4 lxml jupyter
+
