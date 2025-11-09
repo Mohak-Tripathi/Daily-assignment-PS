@@ -387,6 +387,7 @@ streamlit run streamlit_app.py --server.port 8502
 
 <!-- 
 cd /c/AgenticAIDevelopment/day17_crewai_intro
+python -m venv venv
 source venv/Scripts/activate
 pip install -r requirements.txt
 streamlit run streamlit_app.py -->

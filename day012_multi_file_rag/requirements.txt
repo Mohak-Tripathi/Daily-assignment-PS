@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-community
+langchain-google-genai>=2.0.0
+langchain-tavily
+sqlalchemy
+psycopg2-binary
+pymupdf
+langchain-postgres
+pgvector
+tavily-python
+
