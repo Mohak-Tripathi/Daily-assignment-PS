@@ -6,6 +6,8 @@ ENV/
 env.bak/
 venv.bak/
 
+# Streamlit secrets (matches in all subdirectories)
+**/.streamlit/secrets.toml
 # Python
 __pycache__/
 *.py[cod]
