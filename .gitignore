@@ -33,8 +33,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Streamlit
-.streamlit/secrets.toml
+
 
 # Environment variables
 .env
